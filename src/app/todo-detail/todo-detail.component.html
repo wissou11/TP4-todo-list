@@ -1,0 +1,17 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="close()">×</span>
+    <h3>Détails du Todo</h3>
+    <br>
+    <p><strong>Title:</strong> {{ todo.title }}</p>
+    <p><strong>Description:</strong> {{ todo.description }}</p>
+    <p>
+      <strong>Done:</strong>
+      <fa-icon [icon]="faCheck"
+        (click)="updateTodo()"
+        [style.color]="todo.done ? 'green' : 'red'"
+        style="cursor: pointer;">
+      </fa-icon>
+    </p>
+  </div>
+</div>

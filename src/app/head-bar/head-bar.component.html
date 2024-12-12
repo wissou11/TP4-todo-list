@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">My Todo List</h1>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <button class="nav-link btn btn-dark bg-dark" routerLink="/todos">Todos</button>
+      </li>
+      <li *ngIf="!isAuthenticated()" class="nav-item">
+        <button class="nav-link btn btn-dark bg-dark" routerLink="/sign-in">Sign In</button>
+      </li>
+      <li *ngIf="isAuthenticated()" class="nav-item">
+        <button class="nav-link btn btn-dark bg-dark" (click)="logout()">Sign Out</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link btn btn-dark bg-dark" (click)="openNewTodoModal()">New</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<app-todo-template-driven-form
+  *ngIf="isNewTodoModalOpen"
+  (closeModal)="closeNewTodoModal()"
+></app-todo-template-driven-form>

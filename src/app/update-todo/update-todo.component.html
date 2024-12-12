@@ -1,0 +1,36 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeUpdateModel()">×</span>
+    <h3>Edit Task</h3>
+    <br>
+    <form #todoForm="ngForm" (ngSubmit)="updateTodo()">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" [(ngModel)]="todo.title" required />
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input
+          type="datetime-local"
+          id="date"
+          name="date"
+          [(ngModel)]="todo.date"
+          [min]="minDateTime"
+          [value]="getFormattedDate(todo.date)"
+          required
+        />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          [(ngModel)]="todo.description"
+          rows="4"
+          required>
+        </textarea>
+      </div>
+      <button type="submit" [disabled]="!todoForm.form.valid">Update Todo</button>
+    </form>
+  </div>
+</div>

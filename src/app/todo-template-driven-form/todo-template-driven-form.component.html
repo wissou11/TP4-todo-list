@@ -1,0 +1,38 @@
+
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="close()">×</span>
+    <h3>New Task</h3>
+    <br>
+    <form #todoForm="ngForm" (ngSubmit)="addTodo()">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" placeholder="Your task title" id="title" name="title" [(ngModel)]="todo.title" required />
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input
+          type="datetime-local"
+          id="date"
+          name="date"
+          [(ngModel)]="todo.date"
+          [min]="minDateTime"
+          required
+        />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Your task description"
+          [(ngModel)]="todo.description"
+          rows="4"
+          cols="30"
+          required>
+        </textarea>
+      </div>
+      <button type="submit" [disabled]="!todoForm.form.valid">Add</button>
+    </form>
+  </div>
+</div>

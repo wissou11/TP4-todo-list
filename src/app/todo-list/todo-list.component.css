@@ -1,0 +1,35 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button:hover {
+  color: #007bff;
+}
+
+
+.todo-due-soon {
+  border: 2px solid red; 
+  padding: 5px;
+}

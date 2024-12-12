@@ -1,0 +1,89 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Faire du sport",
+      "done": true,
+      "date": "2024-12-08T07:30:00.000Z",
+      "description": "Aller courir 5 km dans le parc."
+    },
+    {
+      "id": "2",
+      "title": "Réviser les cours",
+      "done": true,
+      "date": "2024-12-07T19:00:00Z",
+      "description": "Revoir le chapitre sur les algorithmes."
+    },
+    {
+      "id": "3",
+      "title": "Planifier les vacances",
+      "done": false,
+      "date": "2024-12-09T14:00:00Z",
+      "description": "Trouver un hôtel et réserver les billets d'avion."
+    },
+    {
+      "id": "4",
+      "title": "Faire le ménage",
+      "done": false,
+      "date": "2024-12-08T10:00:00Z",
+      "description": "Nettoyer la cuisine et passer l'aspirateur dans le salon."
+    },
+    {
+      "id": "5",
+      "title": "Envoyer des emails",
+      "done": true,
+      "date": "2024-12-07T16:00:00Z",
+      "description": "Répondre aux emails professionnels en attente."
+    },
+    {
+      "id": "6",
+      "title": "Aller à la poste",
+      "done": false,
+      "date": "2024-12-08T11:30:00Z",
+      "description": "Envoyer le colis pour l'anniversaire de Marie."
+    },
+    {
+      "id": "7",
+      "title": "Préparer le dîner",
+      "done": false,
+      "date": "2024-12-08T18:00:00Z",
+      "description": "Cuisiner un plat de lasagnes maison."
+    },
+    {
+      "id": "8",
+      "title": "Regarder un film",
+      "done": false,
+      "date": "2024-12-08T20:00:00Z",
+      "description": "Choisir un film de science-fiction pour la soirée."
+    },
+    {
+      "id": "9",
+      "title": "Payer les factures",
+      "done": true,
+      "date": "2024-12-07T09:00:00Z",
+      "description": "Payer l'électricité et l'eau via l'application bancaire."
+    },
+    {
+      "id": "10",
+      "title": "Faire une promenade",
+      "done": false,
+      "date": "2024-12-08T16:00:00Z",
+      "description": "Se promener dans le quartier pour se détendre."
+    },
+    {
+      "id": "11",
+      "title": "faire TP4 angular",
+      "description": "Todo List",
+      "done": true,
+      "date": "2024-12-09T20:00"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "login": "mail@gmail.com",
+      "password": "bingo",
+      "token": "ffo33dde"
+    }
+  ]
+}
